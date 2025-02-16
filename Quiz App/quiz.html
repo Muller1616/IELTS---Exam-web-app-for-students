@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Quiz.app</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="icon" href="ielts.png">
+    <script src="quiz.js" defer></script>
+</head>
+<body>
+
+
+    <div class="quiz-container" id="quiz">
+
+
+ <!-- Navigation Bar -->
+ <nav class="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#startQ">Start Quiz</a></li>
+    </ul>
+</nav>
+
+<!-- Introduction Section -->
+<section id="home" class="intro">
+    <h1>Welcome to the IELTS Practice Test</h1>
+    <img src="iet.png" alt="quiz-image" width="40%" height="300px">
+    <p>Test your knowledge on various topics and see how well you score! This quiz app offers a fun and interactive way to challenge yourself.</p>
+</section>
+
+
+
+
+
+<!-- About Section -->
+<section id="about" class="about">
+    <h2>About this Quiz</h2>
+    <p>This Quiz app is designed to help you prepare for the IELTS (International English Language Testing System) exam. It provides a series of Seventy(70) practice questions similar to those you will encounter in the actual IELTS test, helping you to improve your English language skills and get ready for the exam. Each quiz is carefully crafted to cover different topics, and you can track your performance as you go. Whether you are preparing for the reading, writing, or spell check section, this quiz app will help you sharpen your skills and boost your confidence.</p>
+    <img src="11443101.jpg" alt="" width="40%" height="300px">
+</section>
+
+
+        <div class="quiz-header" id="startQ">
+            <h2 id="question">Questions text</h2>
+            <ul>
+                <li>
+                    <input type="radio" id="A" name="answer" class="answer">
+                    <label id="a_text" for="A">Question</label>
+                </li>
+                <li>
+                    <input type="radio" id="B" name="answer" class="answer">
+                    <label id="b_text" for="B">Question</label>
+                </li>
+                <li>
+                    <input type="radio" id="C" name="answer" class="answer">
+                    <label id="c_text" for="C">Question</label>
+                </li>
+                <li>
+                    <input type="radio" id="D" name="answer" class="answer">
+                    <label id="d_text" for="D">Question</label>
+                </li>
+            </ul>
+        </div>
+        <button type="button" id="submit">Submit</button>
+        <footer>
+            <p>&copy; 2025 Developed by Mulugeta</p>
+        </footer>
+    </div>
+</body>
+</html>

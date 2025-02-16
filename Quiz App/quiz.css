@@ -1,0 +1,229 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #E3F2FD, #D1C4E9);
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* Navbar Styling */
+.navbar {
+    background-color: #0d282c;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    gap: 90px;
+}
+
+.navbar li {
+    font-size: 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #21c7e1;
+    text-decoration: none;
+}
+
+
+/* Introduction Section Styling */
+.intro {
+    padding: 2rem;
+    background-color: rgb(92, 178, 193);
+    margin: 3rem 0 0 0;
+    border-radius: 10px;
+}
+
+.intro h1 {
+    margin-top: 70px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+img{
+    border-radius: 40%;
+}
+
+/* About Section Styling */
+.about {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(92, 178, 193);
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-top: 70px;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.quiz-container{
+    background-color: rgb(129, 214, 208);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+.quiz-header{
+    padding: 3rem;
+}
+h2{
+    text-align: center;
+    padding: 2px;
+    margin: 0;
+}
+ul{
+    list-style-type:none;
+    padding: 0;
+    margin-left: 10px;
+}
+ul li{
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+ul li label{
+    cursor: pointer;
+}
+ul li label:hover{
+    color: rgb(4, 36, 218);
+}
+button{
+    background-color:#5758BB;
+    border: none;
+    color: white;
+    display: block;
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width:auto;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #3538b6;
+    transition: 800ms;
+}
+button:focus{
+    background-color: #21604f;
+    outline: none;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+ul li.correct {
+    background-color: rgb(0, 246, 0);
+    color: white;
+    width: 70px;
+}
+ul li.wrong {
+    background-color: red;
+    color: white;
+    width: 70px;
+}
+
+
+.thank-you-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  /* Full viewport height */
+    text-align: center;
+}
+
+.thank-you-message h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.thank-you-message button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.thank-you-message button:hover {
+    background-color: #45a049;
+}
+
+
+footer{
+    background-color: rgb(62, 73, 75);
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 500px){
+    
+img{
+    border-radius: 50%;
+    width: 300px;
+    height: 150px;
+}
+   
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    gap: 50px;
+}
+}
